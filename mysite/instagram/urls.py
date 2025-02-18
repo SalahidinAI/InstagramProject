@@ -4,7 +4,7 @@ from .views import *
 
 router = routers.SimpleRouter()
 router.register(r'save', SaveViewSet, basename='save_list')
-router.register(r'save_item', SaveItemViewSet, basename='_list')
+router.register(r'save_item', SaveItemViewSet, basename='save_list')
 
 urlpatterns = [
     path('', include(router.urls)),
